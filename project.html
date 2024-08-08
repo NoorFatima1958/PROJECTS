@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        .welcome-message, .about, .projects, .contact {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .about img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+        .about p, .contact p {
+            max-width: 600px;
+            margin: 20px auto;
+        }
+        .project {
+            margin: 20px;
+            display: inline-block;
+            width: 200px;
+        }
+        .project img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+        .project p {
+            margin: 10px 0 0 0;
+        }
+        .contact form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .contact form input, .contact form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact form button {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact form button:hover {
+            background-color: #555;
+        }
+        .social-media {
+            margin-top: 20px;
+        }
+        .social-media a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+        }
+        .social-media a:hover {
+            color: #444;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="welcome-message" id="home">
+        <h2>Hello!</h2>
+        <p>Welcome to my personal portfolio website. Here you can find information about my projects, skills, and how to contact me. Feel free to explore my profile and contact me.</p>
+    </div>
+    <div id="about" class="about">
+        <h2>About Me</h2>
+        <img src="images/pic.jfif" alt="Noor Fatima">
+        <p>Hello! I'm Noor Fatima. It has been three years in the software engineering degree program. I am interested in building various small web projects. I enjoy working on projects that challenge me and allow me to grow both personally and professionally.</p>
+    </div>
+    <div id="projects" class="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <img src="images/Dentist.png" alt="Project 1">
+            <p>Project 1: This project focused on oral health practices and common dental issues, and preventive measures. I handled the design and implementation of surveys to assess community needs and created informational brochures, ensuring they were accessible and informative.</p>
+        </div>
+        <div class="project">
+            <img src="images/medical history.PNG" alt="Project 2">
+            <p>Project 2: This project improving patient data management and accessibility, also involved designing a user-friendly interface for hospital staff to input and retrieve patient information. My responsibilities included collaborating with healthcare professionals to gather requirements.</p>
+        </div>
+    </div>
+    <div id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <form action="mailto:noor@example.com" method="post" enctype="text/plain">
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <textarea name="message" rows="5" placeholder="Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <div class="social-media">
+            <a href="https://www.linkedin.com/in/noor-fatima-052a2630a/" target="_blank">LinkedIn</a>         
+        </div>
+    </div>
+</body>
+</html>
